@@ -41,8 +41,8 @@
 
         <nav id="ham-bar" class="navigation"> <!--id and class given that javascript could be use -->
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="directory.html">Join</a></li>
                 <li><a href="directory.html">Discover</a></li>
             </ul>
@@ -56,18 +56,48 @@
                 <a href="join.html" class="cta-btn">Join the Chamber</a>
             </div>
         </section>
-        <h1>Directory</h1>
-        <div class="view-toggle">
-            <button id="gridBtn" class="view-btn">
-                <img src="images/grid.svg" alt="Grid View">
-            </button>
+        <h1>Home</h1>
+        <div class="container">
+            <section class="card spotlight-section">
+                <h2>Member Spotlights</h2>
 
-            <button id="listBtn" class="view-btn">
-                <img src="images/list.svg" alt="List View">
-            </button>
+                <div id="spotlight-container"></div>
+            </section>
+            <section class="card">
+                <h2>Current Weather</h2>
+                <div class="weather-content">
+                    <figure>
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p class="temperature">
+                        <span id="current-temp"></span>
+                    </p>
+                </div>
+
+            </section>
+            <section class="card">
+                <h2>Weather Forcast</h2>
+                <div class="forecast-container">
+
+                    <div class="forecast-day">
+                        <h3 id="day1-date"></h3>
+                        <p id="day1-temp"></p>
+                    </div>
+
+                    <div class="forecast-day">
+                        <h3 id="day2-date"></h3>
+                        <p id="day2-temp"></p>
+                    </div>
+
+                    <div class="forecast-day">
+                        <h3 id="day3-date"></h3>
+                        <p id="day3-temp"></p>
+                    </div>
+
+                </div>
+            </section>
         </div>
-
-        <div id="membersContainer" class="list-view"></div>
     </main>
     <footer>
         <div class="company-detail">
@@ -95,6 +125,8 @@
     <script src="scripts/navigation.js"></script>
     <script src="scripts/date.js"></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/temperature.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 
 </html>

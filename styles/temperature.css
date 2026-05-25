@@ -1,0 +1,27 @@
+.card {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    background-color: pink;
+}
+
+h1 {
+    text-align: center;
+    color: darkgreen;
+
+}
+
+footer {
+    padding: 1rem;
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.card figcaption {
+    color: darkslategray
+}
+
+.card p {
+    color: darkslategrey;
+}

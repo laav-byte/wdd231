@@ -9,11 +9,15 @@
     }
 
     header {
-        grid-template-columns: 24px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     #identity {
-        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
     }
 
     .hamburger {
@@ -22,14 +26,14 @@
 
     .navigation {
         display: flex;
-        /* show nav on desktop */
-        position: static;
-        background: none;
-        padding: 0;
+        margin-left: auto;
+        width: auto;
     }
 
     .navigation ul {
         display: flex;
+        gap: 1rem;
+        list-style: none;
     }
 
     .navigation a {
@@ -67,5 +71,13 @@
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .forecast-container {
+        flex-direction: column;
+    }
+
+    #current-temp {
+        font-size: 2.5rem;
     }
 }
