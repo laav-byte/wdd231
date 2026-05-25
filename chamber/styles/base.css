@@ -273,19 +273,6 @@ p {
     border-radius: 10px;
 }
 
-.hero h2 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-
-    color: white;
-    font-size: 2rem;
-
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-}
-
 .cta-btn {
     display: inline-block;
     margin-top: 0.5rem;
