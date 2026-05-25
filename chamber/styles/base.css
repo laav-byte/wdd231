@@ -37,7 +37,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    align-items: center;
     padding: 0.5rem 1rem;
     background-color: #eee;
     border-bottom: solid 1px #ddd;
@@ -113,7 +112,7 @@ header span {
 }
 
 .navigation li.current a {
-    background-color: #99AD7A;
+    background-color: #546B41;
     color: white;
     border-radius: 4px;
 }
