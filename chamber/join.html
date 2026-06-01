@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Union Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Explore the La Union Chamber of Commerce business directory featuring local enterprises, services, and networking opportunities in La Union.">
+    <meta name="author" content="Loara Adyz Acosta-Villa">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!---FAcebook Meta-->
+    <meta property="og:title" content="La Union Chamber of Commerce - Directory">
+    <meta property="og:description"
+        content="Discover businesses, services, and networking opportunities through the La Union Chamber of Commerce directory.">
+    <meta property="og:image" content="https://laav-byte.github.io/wdd231/chamber/images/launion.png">
+    <meta property="og:url" content="https://laav-byte.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!---Fonstyles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets here-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/temperature.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="identity">
+            <img src="images/launionchamberlogo.svg" alt="Site Logo" width="512" height="512">
+            <span>La Union Chamber of Commerce</span>
+        </div>
+
+        <nav id="ham-bar" class="navigation"> <!--id and class given that javascript could be use -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+    <main class="join-container">
+
+        <section class="join-form">
+
+            <h1>Join the Chamber</h1>
+
+            <form method="get" action="thankyou.html">
+
+                <!-- First Name -->
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstName" title="Enter your first name" autocomplete="given-name"
+                    required>
+
+                <!-- Last Name -->
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastName" title="Enter your last name" autocomplete="family-name"
+                    required>
+
+                <!-- Organizational Title -->
+                <label for="orgtitle">Organizational Title</label>
+                <input type="text" id="orgtitle" name="organizationTitle" title="Enter your organizational title"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+
+                <!-- Email Address -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                    placeholder="example@email.com" required>
+
+                <!-- Mobile Phone -->
+                <label for="phone">Mobile Phone Number</label>
+                <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                    required>
+
+                <!-- Organization Name -->
+                <label for="organization">Business/Organization Name</label>
+                <input type="text" id="organization" name="organization"
+                    title="Enter the name of your business or organization" autocomplete="organization" required>
+
+                <!-- Membership Level -->
+                <label for="membership">Membership Level</label>
+                <select id="membership" name="membershipLevel" title="Select a membership level" required>
+                    <option value="" selected disabled>Select Membership Level</option>
+                    <option value="np">NP Membership (Non-Profit Organizations)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <!-- Organization Description -->
+                <label for="description">Business/Organization Description</label>
+                <textarea id="description" name="description" title="Describe your business or organization"
+                    rows="5"></textarea>
+
+                <!-- Timestamp -->
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <!-- Submit Button -->
+                <input type="submit" value="Apply for Membership">
+
+            </form>
+
+        </section>
+
+        <aside class="membership-cards">
+
+            <div class="membership-card">
+                <h2>NP Membership</h2>
+                <a href="#" data-modal="npModal">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h2>Bronze Membership</h2>
+                <a href="#" data-modal="bronzeModal">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h2>Silver Membership</h2>
+                <a href="#" data-modal="silverModal">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h2>Gold Membership</h2>
+                <a href="#" data-modal="goldModal">Learn More</a>
+            </div>
+
+        </aside>
+        <dialog id="npModal">
+            <h2>NP Membership</h2>
+            <p>No fee for nonprofit organizations.</p>
+            <button>Close</button>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <h2>Bronze Membership</h2>
+            <p>Basic business promotion.</p>
+            <button>Close</button>
+        </dialog>
+
+        <dialog id="silverModal">
+            <h2>Silver Membership</h2>
+            <p>Event discounts and training opportunities.</p>
+            <button>Close</button>
+        </dialog>
+
+        <dialog id="goldModal">
+            <h2>Gold Membership</h2>
+            <p>Premium advertising and spotlight placement.</p>
+            <button>Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <div class="company-detail">
+            <h3>La Union Chamber of Commerce</h3>
+            <p>52 E Rimando Street, Ortiz</p>
+            <p>Naguilian, La union</p>
+            <p>Philippiness</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/loaraadyz.acosta/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/loaraadyz/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram" width="16" height="16"></a>
+            <a href="https://linkedin.com/in/engr-villa" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"
+                    width="16" height="16"></a>
+        </div>
+        <div class="student-detail">
+            <p>WDD231 Class Project </p>
+            <p>Loara Adyz Acosta-Villa</p>
+            &copy; <span id="currentyear"></span> La Union Chamber of Commerce
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

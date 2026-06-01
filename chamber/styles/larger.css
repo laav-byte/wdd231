@@ -80,4 +80,19 @@
     #current-temp {
         font-size: 2.5rem;
     }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    main.join-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+   
 }

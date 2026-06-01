@@ -118,6 +118,7 @@ footer {
 
 .social a:hover {
     background-color: #ddd;
+
 }
 
 /********* MAIN *********/
@@ -138,7 +139,7 @@ h2 {
     background-color: #FFF8EC;
 }
 
-.container p{
+.container p {
     text-align: justify;
 }
 
@@ -188,6 +189,7 @@ h2 {
     text-align: center;
     border-radius: 8px;
     background-color: #DCCCAC;
+    cursor: pointer;
 }
 
 .completed {
@@ -199,3 +201,62 @@ h2 {
     border-left: 8px solid gold;
 }
 
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+/** DIALOG BOX **/
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#courseCode {
+    margin: 0;
+}
+
+#closeButton {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 500px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    transition: width 0.3s ease-in-out 0.2s, height 0.3s ease-in-out 0.2s;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/**ANIMATION**/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeColor {
+    from {
+        background-color: #546B41;
+    }
+
+    to {
+        background-color: white;
+    }
+}

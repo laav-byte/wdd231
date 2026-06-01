@@ -15,8 +15,8 @@
     <meta property="og:title" content="La Union Chamber of Commerce - Directory">
     <meta property="og:description"
         content="Discover businesses, services, and networking opportunities through the La Union Chamber of Commerce directory.">
-    <meta property="og:image" content="https://laav-byte.github.io/wdd231/chamber/images/launion.pngg">
-    <meta property="og:url" content="https://laav-byte.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://laav-byte.github.io/wdd231/chamber/images/launion.png">
+    <meta property="og:url" content="https://laav-byte.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
     <!---Fonstyles-->
@@ -30,6 +30,14 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/temperature.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -42,33 +50,19 @@
         <nav id="ham-bar" class="navigation"> <!--id and class given that javascript could be use -->
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Discover</a></li>
             </ul>
         </nav>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
     <main>
-        <section class="hero">
-            <img src="https://c1.wallpaperflare.com/preview/649/398/495/action-adventure-beach-dawn.jpg"
-                alt="La Union Banner">
-            <div class="hero-content">
-                <a href="join.html" class="cta-btn">Join the Chamber</a>
-            </div>
-        </section>
-        <h1>Directory</h1>
-        <div class="view-toggle">
-            <button id="gridBtn" class="view-btn">
-                <img src="images/grid.svg" alt="Grid View">
-            </button>
+        <h1>Thank You for Joining!</h1>
 
-            <button id="listBtn" class="view-btn">
-                <img src="images/list.svg" alt="List View">
-            </button>
-        </div>
+        <div id="results"></div>
 
-        <div id="membersContainer" class="list-view"></div>
+        <script src="scripts/thankyou.js"></script>
     </main>
     <footer>
         <div class="company-detail">
@@ -93,9 +87,7 @@
         </div>
 
     </footer>
-    <script src="scripts/navigation.js"></script>
-    <script src="scripts/date.js"></script>
-    <script src="scripts/members.js" defer></script>
+
 </body>
 
 </html>
