@@ -242,7 +242,7 @@ footer {
 
 }
 
-.company-detail h1 {
+.company-detail .footer-title {
     font-size: large;
     color: var(--primary);
 }
