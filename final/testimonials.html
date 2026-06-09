@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Union Chamber of Commerce</title>
+    <title>Electrical Engineering Board Exam Review</title>
 
     <meta name="description"
-        content="Explore the La Union Chamber of Commerce business directory featuring local enterprises, services, and networking opportunities in La Union.">
+        content="A website that provides self-review quizzes and materials and also where Electrical Engineers can share their testimonials to inspire the future engineers">
     <meta name="author" content="Loara Adyz Acosta-Villa">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!---FAcebook Meta-->
-    <meta property="og:title" content="La Union Chamber of Commerce - Directory">
-    <meta property="og:description"
-        content="Discover businesses, services, and networking opportunities through the La Union Chamber of Commerce directory.">
+    <meta property="og:title" content="Electrical Engineering Board Exam Review">
+    <meta property="og:description" content="Additional review material for REE Board Examiners">
     <meta property="og:image" content="https://laav-byte.github.io/wdd231/chamber/images/launion.png">
     <meta property="og:url" content="https://laav-byte.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
@@ -36,83 +35,50 @@
     <script src="scripts/members.js" defer></script>
     <script src="scripts/temperature.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/discover.js" type="module"></script>
 </head>
 
 <body>
     <header>
         <div id="identity">
             <img src="images/launionchamberlogo.svg" alt="Site Logo" width="512" height="512">
-            <span>La Union Chamber of Commerce</span>
+            <span>Electrical Engineering Board Exam Review</span>
         </div>
 
         <nav id="ham-bar" class="navigation"> <!--id and class given that javascript could be use -->
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="testimonials.html">Testimonial</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
     <main>
-
         <section class="hero">
-            <img src="https://c1.wallpaperflare.com/preview/649/398/495/action-adventure-beach-dawn.jpg"
-                alt="La Union Banner">
+            <img src="images/ElectricalEngineer.png" alt="Electrical Engineer Review Banner">
             <div class="hero-content">
-                <a href="join.html" class="cta-btn">Join the Chamber</a>
+                <a href="join.html" class="cta-btn">Share your Testimony</a>
             </div>
         </section>
-        <h1>Home</h1>
-        <div class="container">
-            <section class="card spotlight-section">
-                <h2>Member Spotlights</h2>
+        <h1>Directory</h1>
+        <div class="view-toggle">
+            <button id="gridBtn" class="view-btn">
+                <img src="images/grid.svg" alt="Grid View">
+            </button>
 
-                <div id="spotlight-container"></div>
-            </section>
-            <section class="card">
-                <h2>Current Weather</h2>
-                <div class="weather-content">
-                    <figure>
-                        <img id="weather-icon" src="#" alt="Weather icon">
-                        <figcaption></figcaption>
-                    </figure>
-                    <p class="temperature">
-                        <span id="current-temp"></span>
-                    </p>
-                </div>
-
-            </section>
-            <section class="card">
-                <h2>Weather Forcast</h2>
-                <div class="forecast-container">
-
-                    <div class="forecast-day">
-                        <h3 id="day1-date">Day 1</h3>
-                        <p id="day1-temp">Loading...</p>
-                    </div>
-
-                    <div class="forecast-day">
-                        <h3 id="day2-date">Day 2</h3>
-                        <p id="day2-temp">Loading...</p>
-                    </div>
-
-                    <div class="forecast-day">
-                        <h3 id="day3-date">Day 3</h3>
-                        <p id="day3-temp">Laoding...</p>
-                    </div>
-
-                </div>
-            </section>
+            <button id="listBtn" class="view-btn">
+                <img src="images/list.svg" alt="List View">
+            </button>
         </div>
+
+        <div id="membersContainer" class="list-view"></div>
     </main>
     <footer>
         <div class="company-detail">
-            <h3>La Union Chamber of Commerce</h3>
-            <p>52 E Rimando Street, Ortiz</p>
-            <p>Naguilian, La union</p>
+            <h3>Electrical Engineer Board Exam Review</h3>
+            <p>405 Purok 4 East, Gibraltar</p>
+            <p>Baguio City, Benguet</p>
             <p>Philippiness</p>
         </div>
         <div class="social">
@@ -126,12 +92,14 @@
         <div class="student-detail">
             <p>WDD231 Class Project </p>
             <p>Loara Adyz Acosta-Villa</p>
-            &copy; <span id="currentyear"></span> La Union Chamber of Commerce
+            &copy; <span id="currentyear"></span> Electrical Engineer Review
             <p id="lastModified"></p>
         </div>
 
     </footer>
-
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/members.js" defer></script>
 </body>
 
 </html>

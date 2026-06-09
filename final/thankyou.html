@@ -36,83 +36,41 @@
     <script src="scripts/members.js" defer></script>
     <script src="scripts/temperature.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/discover.js" type="module"></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
     <header>
         <div id="identity">
             <img src="images/launionchamberlogo.svg" alt="Site Logo" width="512" height="512">
-            <span>La Union Chamber of Commerce</span>
+            <span>Electrical Engineering Board Exam Review</span>
         </div>
 
         <nav id="ham-bar" class="navigation"> <!--id and class given that javascript could be use -->
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
             </ul>
         </nav>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
     <main>
+        <h1>Thank You for Message!</h1>
+        <h2>Your desire to inpire our aspiring Electrical Engineers is appreciated. Your message will be posted after
+            further evaluation.</h2>
 
-        <section class="hero">
-            <img src="https://c1.wallpaperflare.com/preview/649/398/495/action-adventure-beach-dawn.jpg"
-                alt="La Union Banner">
-            <div class="hero-content">
-                <a href="join.html" class="cta-btn">Join the Chamber</a>
-            </div>
-        </section>
-        <h1>Home</h1>
-        <div class="container">
-            <section class="card spotlight-section">
-                <h2>Member Spotlights</h2>
+        <div id="results"></div>
 
-                <div id="spotlight-container"></div>
-            </section>
-            <section class="card">
-                <h2>Current Weather</h2>
-                <div class="weather-content">
-                    <figure>
-                        <img id="weather-icon" src="#" alt="Weather icon">
-                        <figcaption></figcaption>
-                    </figure>
-                    <p class="temperature">
-                        <span id="current-temp"></span>
-                    </p>
-                </div>
-
-            </section>
-            <section class="card">
-                <h2>Weather Forcast</h2>
-                <div class="forecast-container">
-
-                    <div class="forecast-day">
-                        <h3 id="day1-date">Day 1</h3>
-                        <p id="day1-temp">Loading...</p>
-                    </div>
-
-                    <div class="forecast-day">
-                        <h3 id="day2-date">Day 2</h3>
-                        <p id="day2-temp">Loading...</p>
-                    </div>
-
-                    <div class="forecast-day">
-                        <h3 id="day3-date">Day 3</h3>
-                        <p id="day3-temp">Laoding...</p>
-                    </div>
-
-                </div>
-            </section>
-        </div>
+        <script src="scripts/thankyou.js"></script>
     </main>
     <footer>
         <div class="company-detail">
-            <h3>La Union Chamber of Commerce</h3>
-            <p>52 E Rimando Street, Ortiz</p>
-            <p>Naguilian, La union</p>
+            <h3>Electrical Engineer Board Exam Review</h3>
+            <p>405 Purok 4 East, Gibraltar</p>
+            <p>Baguio City, Benguet</p>
             <p>Philippiness</p>
         </div>
         <div class="social">
@@ -126,7 +84,7 @@
         <div class="student-detail">
             <p>WDD231 Class Project </p>
             <p>Loara Adyz Acosta-Villa</p>
-            &copy; <span id="currentyear"></span> La Union Chamber of Commerce
+            &copy; <span id="currentyear"></span> Electrical Engineer Review
             <p id="lastModified"></p>
         </div>
 

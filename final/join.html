@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Union Chamber of Commerce</title>
+    <title>Electrical Engineer's Testimonies</title>
 
     <meta name="description"
         content="Explore the La Union Chamber of Commerce business directory featuring local enterprises, services, and networking opportunities in La Union.">
@@ -43,15 +43,15 @@
     <header>
         <div id="identity">
             <img src="images/launionchamberlogo.svg" alt="Site Logo" width="512" height="512">
-            <span>La Union Chamber of Commerce</span>
+            <span>Electrical Engineer's Testimonies</span>
         </div>
 
         <nav id="ham-bar" class="navigation"> <!--id and class given that javascript could be use -->
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
                 <li class="current"><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
             </ul>
         </nav>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
@@ -60,7 +60,7 @@
 
         <section class="join-form">
 
-            <h1>Join the Chamber</h1>
+            <h1>Share Your Testimony and Inspirational Message</h1>
 
             <form method="get" action="thankyou.html">
 
@@ -94,26 +94,26 @@
                 <input type="text" id="organization" name="organization"
                     title="Enter the name of your business or organization" autocomplete="organization" required>
 
-                <!-- Membership Level -->
+                <!-- License/Identification -->
                 <label for="membership">Membership Level</label>
                 <select id="membership" name="membershipLevel" title="Select a membership level" required>
-                    <option value="" selected disabled>Select Membership Level</option>
-                    <option value="np">NP Membership (Non-Profit Organizations)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
+                    <option value="" selected disabled>Select License Level</option>
+                    <option value="np">Professional Electrical Engineer</option>
+                    <option value="bronze">Registered Electrical Engineer</option>
+                    <option value="silver">REE Reviewee</option>
+                    <option value="gold">Parents</option>
                 </select>
 
-                <!-- Organization Description -->
-                <label for="description">Business/Organization Description</label>
-                <textarea id="description" name="description" title="Describe your business or organization"
+                <!-- Testimony and Inspirational Message-->
+                <label for="message">Testimony/Inspirational Message</label>
+                <textarea id="message" name="Share your testimony or inspiritual message to the REE Examinees"
                     rows="5"></textarea>
 
                 <!-- Timestamp -->
                 <input type="hidden" id="timestamp" name="timestamp">
 
                 <!-- Submit Button -->
-                <input type="submit" value="Apply for Membership">
+                <input type="submit" value="Submit">
 
             </form>
 
@@ -122,55 +122,60 @@
         <aside class="membership-cards">
 
             <div class="membership-card">
-                <h2>NP Membership</h2>
+                <h2>Professional Electrical Engineer</h2>
                 <a href="#" data-modal="npModal">Learn More</a>
             </div>
 
             <div class="membership-card">
-                <h2>Bronze Membership</h2>
+                <h2>Registered Electrical Engineer</h2>
                 <a href="#" data-modal="bronzeModal">Learn More</a>
             </div>
 
             <div class="membership-card">
-                <h2>Silver Membership</h2>
+                <h2>REE Reviewee</h2>
                 <a href="#" data-modal="silverModal">Learn More</a>
             </div>
 
             <div class="membership-card">
-                <h2>Gold Membership</h2>
+                <h2>Parents</h2>
                 <a href="#" data-modal="goldModal">Learn More</a>
             </div>
 
         </aside>
         <dialog id="npModal">
-            <h2>NP Membership</h2>
-            <p>No fee for nonprofit organizations.</p>
+            <h2>Professional Electrical Engineer</h2>
+            <p>Professional Electrical Engineers are authorized to design, sign, and seal complex electrical plans,
+                perform advanced system analysis, and take full responsibility for massive electrical installations.</p>
             <button>Close</button>
         </dialog>
 
         <dialog id="bronzeModal">
-            <h2>Bronze Membership</h2>
-            <p>Basic business promotion.</p>
+            <h2>Registered Electrical Engineer</h2>
+            <p>A Registered Electrical Engineer (REE) in the Philippines is a licensed professional authorized to
+                handle, supervise, and design electrical systems. Governed by RA 7920, their scope includes power
+                plants, manufacturing facilities, and commercial buildings.</p>
             <button>Close</button>
         </dialog>
 
         <dialog id="silverModal">
-            <h2>Silver Membership</h2>
-            <p>Event discounts and training opportunities.</p>
+            <h2>REE Reviewee</h2>
+            <p>REE reviewees are aspiring Registered Electrical Engineers (REE) who are enrolled in specialized review
+                programs to prepare for the Professional Regulation Commission (PRC) board examination</p>
             <button>Close</button>
         </dialog>
 
         <dialog id="goldModal">
-            <h2>Gold Membership</h2>
-            <p>Premium advertising and spotlight placement.</p>
+            <h2>Parents</h2>
+            <p>A parent is a father, mother, or any caregiver who takes on the responsibility of raising, nurturing, and
+                guiding a child.</p>
             <button>Close</button>
         </dialog>
     </main>
     <footer>
         <div class="company-detail">
-            <h3>La Union Chamber of Commerce</h3>
-            <p>52 E Rimando Street, Ortiz</p>
-            <p>Naguilian, La union</p>
+            <h3>Electrical Engineer Board Exam Review</h3>
+            <p>405 Purok 4 East, Gibraltar</p>
+            <p>Baguio City, Benguet</p>
             <p>Philippiness</p>
         </div>
         <div class="social">
@@ -184,7 +189,7 @@
         <div class="student-detail">
             <p>WDD231 Class Project </p>
             <p>Loara Adyz Acosta-Villa</p>
-            &copy; <span id="currentyear"></span> La Union Chamber of Commerce
+            &copy; <span id="currentyear"></span> Electrical Engineer Review
             <p id="lastModified"></p>
         </div>
 
