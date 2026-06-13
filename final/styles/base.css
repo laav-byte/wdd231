@@ -245,6 +245,11 @@ footer {
     text-align: center;
 }
 
+.company-detail .footer-title {
+    font-size: large;
+    color: var(--primary);
+}
+
 .social {
     display: flex;
     justify-content: center;
@@ -736,6 +741,10 @@ dialog button {
 .description {
     grid-area: description;
 }
+
+
+
+/**Filters**/
 
 #filters {
     display: grid;
