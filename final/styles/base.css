@@ -41,6 +41,10 @@ body {
     background-color: var(--background);
     width: 100%;
     min-height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.5;
 }
 
 h1 {
@@ -223,17 +227,6 @@ header span {
     padding: 1rem;
 }
 
-.list-row {
-    grid-template-columns: 1fr;
-    text-align: left;
-}
-
-.list-img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 4px;
-}
 
 /********** FOOTER ************/
 
@@ -503,11 +496,6 @@ figcaption {
 
 /**Form**/
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    line-height: 1.5;
-}
 
 main.join-container {
     display: grid;
@@ -656,17 +644,13 @@ dialog button {
     padding: 1rem;
 }
 
-.list-table {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
 
 .list-row {
     display: grid;
     grid-template-columns: 80px 1.5fr 1fr 1fr 2fr;
     align-items: center;
     gap: 1rem;
+    text-align: left;
 
     background: white;
     padding: 0.8rem;
@@ -683,9 +667,9 @@ dialog button {
 
 /* image */
 .list-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
     object-fit: cover;
     border: 2px solid #2b5c9a;
 }
