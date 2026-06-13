@@ -31,7 +31,7 @@ cream = #FFF8EC
 
 /* ========= SITE WIDE ========= */
 * {
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -96,7 +96,7 @@ header span {
     font-size: 2rem;
     color: var(--primary);
     cursor: pointer;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hamburger::before {
@@ -561,6 +561,7 @@ main.join-container {
 
 /**Card ANimation**/
 
+
 .membership-cards {
     display: flex;
     flex-direction: column;
@@ -644,4 +645,111 @@ dialog button {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+
+#membersContainer.list-view {
+    padding: 1rem;
+}
+
+.list-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.list-row {
+    display: grid;
+    grid-template-columns: 80px 1.5fr 1fr 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+
+    background: white;
+    padding: 0.8rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.list-row:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* image */
+.list-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #2b5c9a;
+}
+
+/* text alignment */
+.list-row span {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#membersContainer {
+    transition: all 0.3s ease;
+}
+
+/**Discovery Page**/
+#showHere {
+    display: grid;
+    gap: 1rem;
+}
+
+.center-card {
+    display: grid;
+    gap: .5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: var(--surface);
+    border-radius: 14px;
+
+    grid-template-areas:
+        "logo"
+        "title"
+        "region"
+        "address"
+        "description";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.title {
+    grid-area: title;
+}
+
+.region {
+    grid-area: region;
+}
+
+.address {
+    grid-area: address;
+}
+
+.description {
+    grid-area: description;
+}
+
+#filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 2px;
+    padding: 2px;
+    border: 2px;
+}
+
+#filters button {
+    background-color: var(--surface);
+}
+
+#filters button:hover {
+    background-color: var(--hover);
+    color: var(--text-light);
 }

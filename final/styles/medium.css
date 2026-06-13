@@ -1,0 +1,17 @@
+@media (min-width: 38rem) {
+
+    .center-card {
+        grid-template-columns: 150px 1fr;
+
+        grid-template-areas:
+            "logo title"
+            "logo region"
+            "logo address"
+            "logo description";
+    }
+
+    .logo {
+        width: 140px;
+        align-self: center;
+    }
+}

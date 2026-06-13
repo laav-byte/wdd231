@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
 
     header,
     main,
@@ -94,5 +94,21 @@
         padding: 1rem;
     }
 
-   
+    .center-card {
+        grid-template-columns: 180px 1fr;
+
+        grid-template-areas:
+            "logo title"
+            "logo region"
+            "logo address"
+            "logo description";
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    #showHere {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
